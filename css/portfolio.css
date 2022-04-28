@@ -30,7 +30,22 @@ header {
 .portfolio-link:focus {
     color: #2196F3;
 }
+.portfolio-link {
+    position: relative;
+    display: block;
+}
 
+.portfolio-link.current::after {
+    content: "";
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    display: inline-block;
+    background-color: var(--accsent-color);
+    border-radius: 2px;
+}
 /*booton*/
 .btn.current {
     background-color: var(--accsent-color);
@@ -49,16 +64,19 @@ header {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: #212121;
+    /*transition: color 250ms linear;*/
 }
 
 .btn:hover {
     color: #FFFFFF;
     background-color: #2196F3;
+    transition: color 250ms linear;
 }
 
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--accsent-color)
+    transition: color 250ms linear;
 }
 
 
