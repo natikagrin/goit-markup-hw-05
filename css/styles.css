@@ -510,7 +510,11 @@ margin-right: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: opacity 300ms, visibility 300ms;
         }
+       /*.backdrop .is-hidden .modal{
+            transform: scale(0.5);
+        }*/
         .modal{
         min-width: 528px;
         min-height: 581px;
@@ -519,10 +523,12 @@ margin-right: 30px;
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
+        position: relative;
+        /*transition: transform 300ms;*/
         }
         .modal-close-btn{
             position: absolute;
-            top: 8px;
+           top: 8px;
             right: 8px;
             width: 30px;
             height: 30px;
@@ -536,4 +542,5 @@ margin-right: 30px;
         pointer-events: none;
         visibility: hidden;
     }
+    
      
