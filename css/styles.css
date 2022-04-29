@@ -286,9 +286,6 @@ margin-right: 30px;
             padding: 27px;
             width: 370px;
             height: 70px;
-            /*transform: translateY(100%);
-            transition: transform 250ms linear;
-            overflow: auto;*/
             font-family: inherit;
             font-weight: 700;
             font-size: 14px;
@@ -370,6 +367,9 @@ margin-right: 30px;
             justify-content: center;
             align-items: center;
            /* fill: #FFFFFF;*/
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
       
         .team-soc-icon{
@@ -417,6 +417,9 @@ margin-right: 30px;
         box-sizing: border-box;
         border-radius: 4px;
         cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        }
     .client-link:hover{
         border-color: var(--accsent-color)
@@ -511,6 +514,9 @@ margin-right: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         
         .join-soc-link {
