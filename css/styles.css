@@ -563,7 +563,16 @@ margin-right: 30px;
       /* .backdrop .is-hidden .modal{
             transform: scale(0.5) rotate(-290deg);
         }*/
+        .backdrop .is-hidden{
+            opacity: 0;
+            pointer-events: none;
+            
+        }
         .modal{
+        position: relative;
+        /*top: 50%;
+        left: 50%;
+         transform: translate(-50, -50);*/
         min-width: 528px;
         min-height: 581px;
         background: #FFFFFF;
@@ -571,7 +580,6 @@ margin-right: 30px;
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        position: relative;
       /* transition: transform 250ms;
         transform: translate(-50%, -50%) scale(1) rotate(0)*/
         }
