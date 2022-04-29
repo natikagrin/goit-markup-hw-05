@@ -560,9 +560,9 @@ margin-right: 30px;
             justify-content: center;
             transition: opacity 250ms, visibility 250ms;
         }
-       .backdrop .is-hidden .modal{
+      /* .backdrop .is-hidden .modal{
             transform: scale(0.5) rotate(-290deg);
-        }
+        }*/
         .modal{
         min-width: 528px;
         min-height: 581px;
@@ -572,8 +572,8 @@ margin-right: 30px;
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         position: relative;
-       transition: transform 250ms;
-       /* transform: translate(-50%, -50%) scale(0.5) rotate(0)*/
+      /* transition: transform 250ms;
+        transform: translate(-50%, -50%) scale(1) rotate(0)*/
         }
         .modal-close-btn{
             position: absolute;
