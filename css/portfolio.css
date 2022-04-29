@@ -64,19 +64,19 @@ header {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: #212121;
-    /*transition: color 250ms linear;*/
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
     color: #FFFFFF;
     background-color: #2196F3;
-    transition: color 250ms linear;
 }
 
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--accsent-color)
-    transition: color 250ms linear;
 }
 
 
@@ -100,7 +100,8 @@ header {
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px 
+    rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
@@ -118,13 +119,17 @@ header {
     top: 0;
     background-color: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
-    font-weight: 600;
-    line-height: 1.8;
     padding: 40px;
-    height: 100%;
+    width: 370px;
+    height: 294px;
     transform: translateY(100%);
     transition: transform 250ms linear;
     overflow: auto;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
 
 .portfolio-title {
